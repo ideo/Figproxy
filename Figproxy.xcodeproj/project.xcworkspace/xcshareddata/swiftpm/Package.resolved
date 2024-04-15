@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "orsserialport",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/armadsen/ORSSerialPort.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "7e46ba1caef5f8b27b97f0d2264a93bcff340f1f"
+      }
+    }
+  ],
+  "version" : 2
+}

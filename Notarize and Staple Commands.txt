@@ -1,0 +1,5 @@
+productbuild --sign "Developer ID Installer: IDEO LLC (3DTT789YMW)" --component /Users/dvondle/Programming/Figproxy.app /Applications Figproxy.pkg
+
+xcrun notarytool submit Figproxy.pkg --keychain-profile "notarytool-password" --wait
+
+xcrun stapler staple Figproxy.pkg
