@@ -62,6 +62,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     if let data = parseHexStringToData(message) {
                         // Post the notification with Data if parsing succeeds
                         NotificationCenter.default.post(name: .sendSerialMessage, object: nil, userInfo: ["data": data])
+                        
                     }else{
                         print("invalid hex string")
                     }
@@ -69,7 +70,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     // Post the notification with String message directly
                     NotificationCenter.default.post(name: .sendSerialMessage, object: nil, userInfo: ["message": message])
                 }
-                
+                activateRunningApplication(withBundleIdentifier: "com.figma.Desktop")
             } else {
                 if let bundleIdentifier = selectedBrowserBundleID {
                     openURLInBrowser(url, withBrowserBundleIdentifier: bundleIdentifier)
@@ -91,6 +92,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         let configuration = NSWorkspace.OpenConfiguration()
         NSWorkspace.shared.open([url], withApplicationAt: browserURL, configuration: configuration, completionHandler: nil)
+    }
+
+    
+    func activateRunningApplication(withBundleIdentifier bundleIdentifier: String) {
+        let workspace = NSWorkspace.shared
+        // Filter the running applications to find one with the specified bundle identifier.
+        let apps = workspace.runningApplications.filter { $0.bundleIdentifier == bundleIdentifier }
+        if let runningApp = apps.first {
+            // If the app is found running, activate it.
+            runningApp.activate(options: [.activateIgnoringOtherApps])
+        } else {
+            // If the app is not found, it means it's not running as expected.
+            print("No running instance of the application found.")
+        }
     }
     
     func parseHexStringToData(_ hexString: String) -> Data? {

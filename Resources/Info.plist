@@ -20,8 +20,6 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -38,16 +36,18 @@
 			<string>Owner</string>
 		</dict>
 	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.utilities</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>(c) 2024 Dave Vondle dvondle@ideo.com MIT License - free &amp; open source. Neither IDEO nor I are affiliated with Figma. This tool intends to express utility, not affiliation. Should Figma find any confusion in Figproxy’s name or iconography, please contact me for resolution.
+	</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>(c) 2024 Dave Vondle dvondle@ideo.com MIT License - free &amp; open source. Neither IDEO nor I are affiliated with Figma. This tool intends to express utility, not affiliation. Should Figma find any confusion in Figproxy’s name or iconography, please contact me for resolution.
-	</string>
 </dict>
 </plist>
