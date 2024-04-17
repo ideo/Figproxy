@@ -4,7 +4,7 @@
 - It's designed to talk to hardware prototyping platforms like Arduino.
 
 ## Why Did You Make It?
-at [IDEO](ideo.com) I work on a lot of physical product designs that incorporate displays. I commonly work with UX designers whose tool of choice for rapid iteration of experiences is Figma. This allows me to connect their designs to hardware I work on in the initial design phase, and can enable tangible experiences without having to develop software that duplicates the on-screen interactions.
+At [IDEO](ideo.com) I work on a lot of physical product designs that incorporate displays. I commonly work with UX designers whose tool of choice for rapid iteration of experiences is Figma. This allows me to connect their designs to hardware I work on in the initial design phase, and can enable tangible experiences without having to develop software that duplicates the on-screen interactions.
 
 ## What Does it Run On? (MacOS)
 - Currently, and for the forseeable future, this is a **MacOS app only**. It would have to be developed from the ground up for Linux or Windows and I don't have time to do it.  
