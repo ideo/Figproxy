@@ -45,7 +45,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     override init() {
         #if DEBUG
-        UserDefaults.standard.removeObject(forKey: "selectedBrowserBundleID")
+        //UserDefaults.standard.removeObject(forKey: "selectedBrowserBundleID")
         #endif
         super.init()
         selectedBrowserBundleID = UserDefaults.standard.string(forKey: "selectedBrowserBundleID")

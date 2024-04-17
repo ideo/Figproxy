@@ -652,7 +652,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="345" height="602"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1728" height="1079"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1260"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="345" height="602"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -861,7 +861,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             </box>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fly-VW-XgU">
-                                <rect key="frame" x="0.0" y="396" width="345" height="16"/>
+                                <rect key="frame" x="0.0" y="224" width="345" height="16"/>
                                 <subviews>
                                     <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mLP-Ak-Q6f">
                                         <rect key="frame" x="5" y="1" width="13" height="13"/>
@@ -1120,7 +1120,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             </box>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-v8-1Op">
-                                <rect key="frame" x="0.0" y="33" width="345" height="16"/>
+                                <rect key="frame" x="0.0" y="191" width="345" height="16"/>
                                 <subviews>
                                     <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FdG-xe-edF">
                                         <rect key="frame" x="5" y="1" width="13" height="13"/>
@@ -1240,7 +1240,7 @@
                                         <rect key="frame" x="20" y="120" width="426" height="5"/>
                                     </box>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwg-tA-11f">
-                                        <rect key="frame" x="0.0" y="0.0" width="476" height="114"/>
+                                        <rect key="frame" x="-10" y="0.0" width="476" height="114"/>
                                         <subviews>
                                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ftU-ww-P4X">
                                                 <rect key="frame" x="20" y="0.0" width="214" height="114"/>
@@ -1279,6 +1279,9 @@
                                                             </constraints>
                                                             <edgeInsets key="contentInsets" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                                         </clipView>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="FKW-30-ud3"/>
+                                                        </constraints>
                                                         <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="uz7-Zs-OoF">
                                                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                                             <autoresizingMask key="autoresizingMask"/>
