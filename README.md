@@ -20,13 +20,14 @@ I am 100% behind someone else taking thiss idea and porting it to another platfo
 - Open "Figproxy.pkg" and follow the prompts. This will install Figproxy in your Applications Folder
 - Find Figproxy in your Applications and open it.
 - You will get this prompt, hit OK
-<img width="413" alt="Screen Shot 2024-04-16 at 11 35 21 PM" src="https://github.com/ideo/Figproxy/assets/915950/a9fc3260-8203-4ecb-a4b9-b564d2ce2f8f">
+  <img width="413" alt="Screen Shot 2024-04-16 at 11 35 21 PM" src="https://github.com/ideo/Figproxy/assets/915950/a9fc3260-8203-4ecb-a4b9-b564d2ce2f8f">
 - Select the browser that is currently your default browser (For example Google Chrome)
-<img width="912" alt="Screen Shot 2024-04-16 at 11 36 50 PM" src="https://github.com/ideo/Figproxy/assets/915950/2804e028-47e5-4b3d-b23a-45b04962416f">
+  <img width="912" alt="Screen Shot 2024-04-16 at 11 36 50 PM" src="https://github.com/ideo/Figproxy/assets/915950/2804e028-47e5-4b3d-b23a-45b04962416f">
 - You will also need to give it Accessibility Priviledges:
-<img width="529" alt="Screen Shot 2024-04-16 at 11 35 29 PM" src="https://github.com/ideo/Figproxy/assets/915950/b907964e-a5f0-4fbc-aaa6-cfa2a5326707">
+
+  <img width="529" alt="Screen Shot 2024-04-16 at 11 35 29 PM" src="https://github.com/ideo/Figproxy/assets/915950/b907964e-a5f0-4fbc-aaa6-cfa2a5326707">
 - Click "Open System Preferences" and make sure Figproxy has a check next to it:
-<img width="780" alt="Screen Shot 2024-04-16 at 11 36 05 PM" src="https://github.com/ideo/Figproxy/assets/915950/2d680510-df14-4d34-ae14-67a130930f79">
+  <img width="780" alt="Screen Shot 2024-04-16 at 11 36 05 PM" src="https://github.com/ideo/Figproxy/assets/915950/2d680510-df14-4d34-ae14-67a130930f79">
 - That's it!
 
-
+# Using Figproxy
