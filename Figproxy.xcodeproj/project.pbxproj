@@ -11,6 +11,7 @@
 		3808B9502B7B27C4003D2BD8 /* DefaultBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3808B94F2B7B27C4003D2BD8 /* DefaultBrowser.m */; };
 		3808B9522B7C36B7003D2BD8 /* NotificationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808B9512B7C36B7003D2BD8 /* NotificationExtensions.swift */; };
 		388942602B9A5B260082696F /* CGKeyCodeInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3889425F2B9A5B260082696F /* CGKeyCodeInitializers.swift */; };
+		388BF87A2BCF2F34003B789C /* DefaultBrowserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388BF8792BCF2F34003B789C /* DefaultBrowserManager.swift */; };
 		38CA250B2BC724E90093560E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38CA250A2BC724E90093560E /* MainMenu.xib */; };
 		9D0E21661A0441F500051960 /* FigproxyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E21651A0441F500051960 /* FigproxyController.swift */; };
 		9DFD06401A043BF300CE0294 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFD063B1A043BF300CE0294 /* Images.xcassets */; };
@@ -40,6 +41,7 @@
 		3808B9512B7C36B7003D2BD8 /* NotificationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtensions.swift; sourceTree = "<group>"; };
 		380E83C92B7EDD0D00C61105 /* Figproxy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Figproxy.entitlements; sourceTree = "<group>"; };
 		3889425F2B9A5B260082696F /* CGKeyCodeInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGKeyCodeInitializers.swift; sourceTree = "<group>"; };
+		388BF8792BCF2F34003B789C /* DefaultBrowserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBrowserManager.swift; sourceTree = "<group>"; };
 		38CA250A2BC724E90093560E /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		9D0E21651A0441F500051960 /* FigproxyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigproxyController.swift; sourceTree = "<group>"; };
 		9DA8B410220C8FDC00200A6E /* ORSSerialPort.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ORSSerialPort.xcodeproj; path = "../../../Framework Project/ORSSerialPort.xcodeproj"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				3808B9512B7C36B7003D2BD8 /* NotificationExtensions.swift */,
 				3808B94E2B7B27C4003D2BD8 /* Figproxy-Bridging-Header.h */,
 				3889425F2B9A5B260082696F /* CGKeyCodeInitializers.swift */,
+				388BF8792BCF2F34003B789C /* DefaultBrowserManager.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388BF87A2BCF2F34003B789C /* DefaultBrowserManager.swift in Sources */,
 				9DFD06421A043BF300CE0294 /* AppDelegate.swift in Sources */,
 				3808B9522B7C36B7003D2BD8 /* NotificationExtensions.swift in Sources */,
 				388942602B9A5B260082696F /* CGKeyCodeInitializers.swift in Sources */,

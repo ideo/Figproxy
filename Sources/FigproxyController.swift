@@ -27,7 +27,7 @@
 import Cocoa
 import ORSSerial
 import UserNotifications
-import UniformTypeIdentifiers  // Make sure to import this at the top of your file
+import UniformTypeIdentifiers
 
 class FigproxyController: NSObject, ORSSerialPortDelegate, NSUserNotificationCenterDelegate {
 	@objc let serialPortManager = ORSSerialPortManager.shared()
@@ -47,7 +47,6 @@ class FigproxyController: NSObject, ORSSerialPortDelegate, NSUserNotificationCen
 	@IBOutlet var receivedDataTextView: NSTextView!
     @IBOutlet var receivedDataHexView: NSTextView!
 	@IBOutlet weak var openCloseButton: NSButton!
-    @IBOutlet weak var setDefaultBrowserButton: NSButton!
     @IBOutlet weak var selectRealBrowserButton: NSButton!
 	@IBOutlet weak var lineEndingPopUpButton: NSPopUpButton!
     @IBOutlet weak var dataOptionsView: NSStackView!
@@ -96,8 +95,6 @@ class FigproxyController: NSObject, ORSSerialPortDelegate, NSUserNotificationCen
         pinStatesView.isHidden = shouldHide
     }
     
-    
-    
 	@IBAction func send(_: Any) {
 		var string = self.sendTextField.stringValue
 		if self.shouldAddLineEnding && !string.hasSuffix("\n") {
@@ -122,36 +119,14 @@ class FigproxyController: NSObject, ORSSerialPortDelegate, NSUserNotificationCen
                     self.receivedDataTextView.textStorage?.mutableString.setString("")
                     self.receivedDataHexView.textStorage?.mutableString.setString("")
                 }
-                
                 //arduino need RTS on macOS so we do this by default
                 port.rts = true
-                //port.dtr = true
 			}
 		}
 	}
     
-    @IBAction func setDefaultBrowser(_ sender: Any) {
-        set_default_handler("http", "com.ideo.figproxy")
-        set_default_handler("https", "com.ideo.figproxy")
-    }
-    
     @IBAction func selectRealBrowser(_ sender: Any) {
-        let openPanel = NSOpenPanel()
-            openPanel.canChooseFiles = true
-            openPanel.canChooseDirectories = false
-            openPanel.allowedContentTypes = [UTType.application]  // Specify allowed content types using UTType
-            openPanel.allowsMultipleSelection = false
-            openPanel.directoryURL = URL(fileURLWithPath: "/Applications", isDirectory: true)
-
-            openPanel.begin { response in
-                if response == .OK, let url = openPanel.url, let bundleID = Bundle(url: url)?.bundleIdentifier {
-                    // Use the selected application's bundle ID as needed
-                    if let appDelegate = NSApplication.shared.delegate as? AppDelegate {
-                        appDelegate.selectedBrowserBundleID = bundleID
-                    }
-                    UserDefaults.standard.set(bundleID, forKey: "selectedBrowserBundleID")
-                }
-            }
+        UserSettingsManager.shared.showOpenPanelForBrowserSelection()
     }
 	
 	@IBAction func clear(_ sender: Any) {
@@ -313,28 +288,4 @@ class FigproxyController: NSObject, ORSSerialPortDelegate, NSUserNotificationCen
 		}
 	}
     #endif
-	
-    /*
-	func postUserNotificationForConnectedPorts(_ connectedPorts: [ORSSerialPort]) {
-		let unc = NSUserNotificationCenter.default
-		for port in connectedPorts {
-			let userNote = NSUserNotification()
-			userNote.title = NSLocalizedString("Serial Port Connected", comment: "Serial Port Connected")
-			userNote.informativeText = "Serial Port \(port.name) was connected to your Mac."
-			userNote.soundName = nil;
-			unc.deliver(userNote)
-		}
-	}
-	
-	func postUserNotificationForDisconnectedPorts(_ disconnectedPorts: [ORSSerialPort]) {
-		let unc = NSUserNotificationCenter.default
-		for port in disconnectedPorts {
-			let userNote = NSUserNotification()
-			userNote.title = NSLocalizedString("Serial Port Disconnected", comment: "Serial Port Disconnected")
-			userNote.informativeText = "Serial Port \(port.name) was disconnected from your Mac."
-			userNote.soundName = nil;
-			unc.deliver(userNote)
-		}
-	}
-     */
 }

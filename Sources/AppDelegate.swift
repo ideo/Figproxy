@@ -26,22 +26,56 @@
 
 import Cocoa
 import UserNotifications
-
+import ApplicationServices
+import UniformTypeIdentifiers
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 	@IBOutlet weak var window: NSWindow!
+    var promptUserToSetDefault: Bool = false
     
     var selectedBrowserBundleID: String? {
         didSet {
             UserDefaults.standard.set(selectedBrowserBundleID, forKey: "selectedBrowserBundleID")
+            #if DEBUG
+            print("selectedBrowserBundleID= \(String(describing: selectedBrowserBundleID))")
+            #endif
         }
     }
     
     override init() {
+        #if DEBUG
+        UserDefaults.standard.removeObject(forKey: "selectedBrowserBundleID")
+        #endif
         super.init()
         selectedBrowserBundleID = UserDefaults.standard.string(forKey: "selectedBrowserBundleID")
+        promptUserToSetDefault=selectedBrowserBundleID==nil
     }
+    
+    func applicationDidBecomeActive(_ aNotification: Notification) {
+        //set as the default browser on launch
+        set_default_handler("http", "com.ideo.figproxy")
+        set_default_handler("https", "com.ideo.figproxy")
+    }
+        
+    func applicationDidFinishLaunching(_ aNotification: Notification) {        
+        // if accessibility permissions are not allowed yet
+        if !AXIsProcessTrusted() {
+            print("accessibility is not set")
+            let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true]
+            let accessEnabled = AXIsProcessTrustedWithOptions(options)
+            
+            if !accessEnabled {
+                print("Access not enabled. Please grant accessibility permissions.")
+            }
+        }
+        
+        if (promptUserToSetDefault){
+            UserSettingsManager.shared.checkAndPromptForDefaultBrowser(window: window)
+        }
+        
+    }
+    
     @objc func handleBundleIDSelected(_ notification: Notification) {
         if let bundleID = notification.object as? String {
             selectedBrowserBundleID = bundleID

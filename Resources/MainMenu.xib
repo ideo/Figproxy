@@ -646,13 +646,13 @@
                     </menu>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="141" y="135"/>
+            <point key="canvasLocation" x="131" y="-115"/>
         </menu>
         <window title="Figproxy" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="345" height="602"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1260"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1728" height="1079"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="345" height="602"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -832,18 +832,8 @@
                                 </customSpacing>
                             </stackView>
                             <stackView hidden="YES" distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Go-OQ-6sM">
-                                <rect key="frame" x="0.0" y="527" width="375" height="48"/>
+                                <rect key="frame" x="0.0" y="555" width="336" height="20"/>
                                 <subviews>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5hl-Wm-NvV">
-                                        <rect key="frame" x="116" y="21" width="256" height="32"/>
-                                        <buttonCell key="cell" type="push" title="Set Figproxy as your default browser" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QrW-t3-B8Y">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="setDefaultBrowser:" target="536" id="lBN-fb-x7Q"/>
-                                        </connections>
-                                    </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jjt-OH-2Gg">
                                         <rect key="frame" x="116" y="-7" width="227" height="32"/>
                                         <buttonCell key="cell" type="push" title="Select your real default browser" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SKK-si-8i4">
@@ -857,15 +847,12 @@
                                 </subviews>
                                 <edgeInsets key="edgeInsets" left="123" right="0.0" top="0.0" bottom="0.0"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="2ow-ng-Id1"/>
-                                    <constraint firstAttribute="trailing" secondItem="5hl-Wm-NvV" secondAttribute="trailing" constant="10" id="iF4-Bx-J65"/>
+                                    <constraint firstAttribute="height" constant="20" id="2ow-ng-Id1"/>
                                 </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
-                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
@@ -1253,7 +1240,7 @@
                                         <rect key="frame" x="20" y="120" width="426" height="5"/>
                                     </box>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwg-tA-11f">
-                                        <rect key="frame" x="-10" y="0.0" width="476" height="114"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="476" height="114"/>
                                         <subviews>
                                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ftU-ww-P4X">
                                                 <rect key="frame" x="20" y="0.0" width="214" height="114"/>
@@ -1675,7 +1662,6 @@
                 <outlet property="sendAndReceiveView" destination="qyJ-Mg-kCB" id="oHf-J3-3cE"/>
                 <outlet property="sendButton" destination="XNF-th-siu" id="0lL-iD-0YN"/>
                 <outlet property="sendTextField" destination="yI0-BM-r0e" id="0vn-em-jya"/>
-                <outlet property="setDefaultBrowserButton" destination="5hl-Wm-NvV" id="2EQ-vZ-k4s"/>
             </connections>
         </customObject>
     </objects>
