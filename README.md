@@ -9,7 +9,7 @@ At [IDEO](ideo.com) I work on a lot of physical product designs that incorporate
 ## What Does it Run On? (MacOS)
 - Currently, and for the forseeable future, this is a **MacOS app only**. It would have to be developed from the ground up for Linux or Windows and I don't have time to do it.  
 - An iOS app is interesting but I'm not sure if it's possible.  
-- I am 100% behind someone else taking thiss idea and porting it to another platform.
+- I am 100% behind someone else taking this idea and porting it to another platform.
 
 ## Use Cases
 - **Kiosks** - Soda Machines, Jukeboxes, Movie Ticket Printers, ATMs
