@@ -18,6 +18,7 @@ At [IDEO](ideo.com) I work on a lot of physical product designs that incorporate
 - **Home Automation** - Prototype a UI to trigger lights, locks, shades etc. And make it actually work
 - **Hardware "Sketching"** - Quickly test out functionality with a physical controller and digital twin before building a more complicated physical prototype
 - **Games** - Make a physical spinner or gameplay element that talks to a Figma game
+- **A ton more** - I'm excited to see what you do with it!
 
 ## Installation
 - Download the Figproxy App from [the github releases](https://github.com/ideo/Figproxy/releases) also found on the right of this page →
