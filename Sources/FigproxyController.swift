@@ -121,6 +121,7 @@ class FigproxyController: NSObject, ORSSerialPortDelegate, NSUserNotificationCen
                 }
                 //arduino need RTS on macOS so we do this by default
                 port.rts = true
+                port.dtr = true
 			}
 		}
 	}
