@@ -41,9 +41,7 @@
 		3808B9512B7C36B7003D2BD8 /* NotificationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtensions.swift; sourceTree = "<group>"; };
 		380E83C92B7EDD0D00C61105 /* Figproxy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Figproxy.entitlements; sourceTree = "<group>"; };
 		3889425F2B9A5B260082696F /* CGKeyCodeInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGKeyCodeInitializers.swift; sourceTree = "<group>"; };
-		3889BA422BD7212C00D141B4 /* FigproxyDotStarExample */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FigproxyDotStarExample; sourceTree = "<group>"; };
-		3889BA432BD7212C00D141B4 /* FigproxyEncoderExample */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FigproxyEncoderExample; sourceTree = "<group>"; };
-		3889BA442BD7212C00D141B4 /* FigproxyArduinoBasicTest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FigproxyArduinoBasicTest; sourceTree = "<group>"; };
+		3889BA452BD7232000D141B4 /* Arduino Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Arduino Examples"; sourceTree = "<group>"; };
 		388BF8792BCF2F34003B789C /* DefaultBrowserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBrowserManager.swift; sourceTree = "<group>"; };
 		38CA250A2BC724E90093560E /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		9D0E21651A0441F500051960 /* FigproxyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigproxyController.swift; sourceTree = "<group>"; };
@@ -87,9 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				380E83C92B7EDD0D00C61105 /* Figproxy.entitlements */,
-				3889BA442BD7212C00D141B4 /* FigproxyArduinoBasicTest */,
-				3889BA422BD7212C00D141B4 /* FigproxyDotStarExample */,
-				3889BA432BD7212C00D141B4 /* FigproxyEncoderExample */,
+				3889BA452BD7232000D141B4 /* Arduino Examples */,
 				9DFD063D1A043BF300CE0294 /* Sources */,
 				9DA8B40F220C8FCD00200A6E /* Frameworks */,
 				9DFD06381A043BF300CE0294 /* Resources */,
