@@ -74,7 +74,7 @@ Serial.print('c');
 To get data into Figma, Figproxy sends characters as keypress events.  
 <img width="480" alt="keypress event example" src="https://github.com/ideo/Figproxy/assets/915950/9d98ad93-9602-4344-bf9e-8c81ee278eba">  
   
-If you want to try out examples yourself you can [find example Arduino Skethes in this repo](https://github.com/ideo/Figproxy/tree/main/Arduino%20Examples) and the [Figma files here](https://www.figma.com/community/file/1364647996816473533/figproxy-examples)
+If you want to try out examples yourself you can [find example Arduino Sketches in this repo](https://github.com/ideo/Figproxy/tree/main/Arduino%20Examples) and the [Figma files here](https://www.figma.com/community/file/1364647996816473533/figproxy-examples)
 
 ## Software Options & Debugging
 
