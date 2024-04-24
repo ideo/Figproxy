@@ -89,18 +89,17 @@ If you want to try out examples yourself you can [find example Arduino Sketches 
 ### Figproxy Arduino Basic Test
 Demonstrates sending and receiving data from Figma using the Figproxy utility.  
 ![1_basic](https://github.com/ideo/Figproxy/assets/915950/b08d2b44-bffc-4c11-acfb-595776d28bb6)  
-**Click below image for video**  
 [![Figproxy Arduino Basic Test](https://img.youtube.com/vi/f7j1NB-l-T4/0.jpg)](https://www.youtube.com/watch?v=f7j1NB-l-T4)  
+[_Video Link_](https://www.youtube.com/watch?v=f7j1NB-l-T4)
 
 ### Figproxy Dotstar Example
 This allows you to control the colors of an LED strip from Figma. It also shows off raw hex-value data sending.  
 ![2_dotstar](https://github.com/ideo/Figproxy/assets/915950/28d2647d-03be-4e93-a216-1448d19bc0a4)  
-**Click below image for video**  
 [![Figproxy Dotstar Example](https://img.youtube.com/vi/d6X2Jo2njD4/0.jpg)](https://www.youtube.com/watch?v=d6X2Jo2njD4)  
+[_Video Link_](https://www.youtube.com/watch?v=d6X2Jo2njD4)
 
 ### Figproxy Encoder Example
 This pushes the limits of Arduino→Figma communication - where we make a digital twin of a knob that has 100 different positions and make a "locker combo simulator" to show how we can use Figproxy to make complex interactive dynamic prototypes.  
 ![3_encoder](https://github.com/ideo/Figproxy/assets/915950/f4829b09-2af7-477a-81ef-0133627f0841)  
-**Click below image for video**  
 [![Figproxy Encoder Example](https://img.youtube.com/vi/kLc0z3UV_Xo/0.jpg)](https://www.youtube.com/watch?v=kLc0z3UV_Xo)  
-
+[_Video Link_](https://www.youtube.com/watch?v=kLc0z3UV_Xo)
