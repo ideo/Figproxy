@@ -78,5 +78,8 @@ To get data into Figma, Figproxy sends characters as keypress events.
 If you want to try out examples yourself you can [find example Arduino Sketches in this repo](https://github.com/ideo/Figproxy/tree/main/Arduino%20Examples) and the [Figma files here](https://www.figma.com/community/file/1364647996816473533/figproxy-examples)
 
 ## Software Options & Debugging
-
-
+- Serial Port: This is the serial port the Arduino is connected to. It will usually look something like "usbmodem101" It will not populate in the list until it is plugged in or connected.
+- Baud Rate: The speed that it talks. This needs to match the speed specified in your Arduino code. As a default 19200 is a good choice.
+- Browser Setup: Use this to set your secondary default browser again.
+- Data Options: These are options in how the serial data is formatted. For Arduino, you should not need to change these.
+- Test Send and Receive: you can type in characters to send to Arduino here to test. You can also see what the 
