@@ -39,7 +39,7 @@ At [IDEO](ideo.com) I work on a lot of physical product designs that incorporate
 ## How It Works
 Figma does not support communication to other software in its API. Because we can't go the official route, Figproxy uses two different "hacks" to achieve communication.
 ### Speaking Out (Figma → Arduino) 
-_Note: I will be using "Arduino" as shorthand for any hardware that can speak over a seral connection as it is by far the most common platform for this usage_  
+_Note: I will be using "Arduino" as shorthand for any hardware that can speak over a serial connection as it is by far the most common platform for this usage_  
   
 When you specify for Figma to go to a link, Figproxy looks at the link and if it starts with "send" (and not, for instance "http://") we know it is intended to be routed to hardware.  
   
@@ -63,7 +63,7 @@ In Arduino, you can listen for a character and perform some action like this:
 If there is more complex data you need to send you can send a string like "hello world!:  
 <img width="480" alt="send hello world!" src="https://github.com/ideo/Figproxy/assets/915950/89f5eacc-eb52-443c-9703-dcf7c1fa2754">  
   
-You can even send hexadecimal characters by preceeding the string with "0x"  
+You can even send hexadecimal characters by preceding the string with "0x"  
 <img width="242" alt="send hex data" src="https://github.com/ideo/Figproxy/assets/915950/22e9ba67-f5e6-416b-a33a-c337a6249921">  
   
 ### Speaking In (Arduino → Figma) 
