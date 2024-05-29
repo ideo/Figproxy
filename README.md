@@ -27,7 +27,8 @@ At [IDEO](ideo.com) I work on a lot of physical product designs that incorporate
 - Find Figproxy in your Applications and open it.
 - You will get this prompt, hit OK
   <img width="413" alt="Screen Shot 2024-04-16 at 11 35 21 PM" src="https://github.com/ideo/Figproxy/assets/915950/a9fc3260-8203-4ecb-a4b9-b564d2ce2f8f">
-- Select the browser that is currently your default browser (For example Google Chrome)
+- If the system asks you to choose a default browser, select "Figproxy" as your default. 
+- After Figproxy is set as the system default, Select the browser that was currently your default browser when this window pops up (For example Google Chrome)
   <img width="912" alt="Screen Shot 2024-04-16 at 11 36 50 PM" src="https://github.com/ideo/Figproxy/assets/915950/2804e028-47e5-4b3d-b23a-45b04962416f">
 - You will also need to give it Accessibility Access:
 
